@@ -1,0 +1,43 @@
+name: Testing with Pytest
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r "Github Lab/requirements.txt"
+
+      - name: Run tests and generate XML report
+        run: |
+          cd "Github Lab"
+          pytest test/test_pytest.py -v --junitxml=pytest-report.xml
+        continue-on-error: false
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-results
+          path: "Github Lab/pytest-report.xml"
+
+      - name: Notify on success
+        if: success()
+        run: echo "Pytest tests passed successfully"
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "Pytest tests failed"
