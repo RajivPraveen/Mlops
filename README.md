@@ -30,6 +30,7 @@ This repository contains lab assignments for the **Machine Learning Operations (
 |-----|-------|-------------|--------|
 | [**Github Lab**](./Github%20Lab/) | GitHub, Testing & CI/CD | Enhanced calculator with statistical functions, a data processor, and a linear regression model — all tested with pytest/unittest and automated via GitHub Actions | ✅ Complete |
 | [**FastAPI Lab**](./FastAPI%20Lab/) | API Development | ML model deployment using FastAPI with RESTful endpoints | ✅ Complete |
+| [**Streamlit labs**](./Streamlit%20labs/) | Data App Development | Interactive Streamlit applications for data exploration, backend integration, and model-driven workflows | ✅ Complete |
 
 ---
 
@@ -56,6 +57,14 @@ Mlops/
 │   ├── assets/                        # Documentation assets
 │   ├── requirements.txt
 │   └── README.md
+│
+├── Streamlit labs/
+│   ├── src/                           # Streamlit app source code
+│   ├── backend/                       # Backend services/utilities used by app
+│   ├── data/                          # Datasets and static resources
+│   ├── assets/                        # UI and documentation assets
+│   ├── requirements.txt
+│   └── README.md                      # Lab overview and usage details
 │
 ├── .gitignore
 └── README.md                          # ← You are here
