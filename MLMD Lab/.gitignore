@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-metadata/
-stats/
-anomalies/
-.venv/
-*.egg-info/
-.DS_Store
