@@ -31,6 +31,7 @@ This repository contains lab assignments for the **Machine Learning Operations (
 | [**Github Lab**](./Github%20Lab/) | GitHub, Testing & CI/CD | Enhanced calculator with statistical functions, a data processor, and a linear regression model — all tested with pytest/unittest and automated via GitHub Actions | ✅ Complete |
 | [**FastAPI Lab**](./FastAPI%20Lab/) | API Development | ML model deployment using FastAPI with RESTful endpoints | ✅ Complete |
 | [**Streamlit labs**](./Streamlit%20labs/) | Data App Development | Interactive Streamlit applications for data exploration, backend integration, and model-driven workflows | ✅ Complete |
+| [**TFDV Lab**](./TFDV%20Lab/) | Data Validation | TensorFlow Data Validation (TFDV) on the Titanic dataset — statistics, schema inference, anomaly detection, and slice analysis | ✅ Complete |
 
 ---
 
@@ -65,6 +66,14 @@ Mlops/
 │   ├── assets/                        # UI and documentation assets
 │   ├── requirements.txt
 │   └── README.md                      # Lab overview and usage details
+│
+├── TFDV Lab/
+│   ├── TFDV_Lab1.ipynb                # Main TFDV notebook
+│   ├── util.py                        # Anomalous row injection utility
+│   ├── data/                          # Titanic dataset
+│   ├── img/                           # Visualization outputs
+│   ├── requirements.txt
+│   └── README.md
 │
 ├── .gitignore
 └── README.md                          # ← You are here
@@ -103,6 +112,7 @@ pytest test/test_pytest.py -v
 | **flake8** | Linting & code quality |
 | **FastAPI** | API framework |
 | **GitHub Actions** | CI/CD pipelines |
+| **TensorFlow Data Validation** | Data validation & schema inference |
 
 ---
 
